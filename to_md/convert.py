@@ -29,14 +29,10 @@ if __name__ == "__main__":
             continue
         cnt[item["categories"][0]] += 1
 
-    markdown = f"<div id=toc></div>\n\n# Table of Contents\n\n"
-    for idx, cate in enumerate(categories):
-        markdown += f"- [{cate}](#{cate}) [Total: {cnt[cate]}]\n"
-
+    markdown = f"[[toc]]"
     idx = count(1)
     for cate in categories:
-        markdown += f"\n\n<div id='{cate}'></div>\n\n"
-        markdown += f"# {cate} [[Back]](#toc)\n\n"
+        markdown += f"# {cate}\n\n"
         markdown += "\n\n".join(
             [
                 template.format(
