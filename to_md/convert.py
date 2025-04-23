@@ -29,7 +29,7 @@ if __name__ == "__main__":
             continue
         cnt[item["categories"][0]] += 1
 
-    markdown = f"[[toc]]"
+    markdown = f"[[toc]]\n\n"
     idx = count(1)
     for cate in categories:
         markdown += f"# {cate}\n\n"
