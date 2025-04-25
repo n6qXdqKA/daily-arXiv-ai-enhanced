@@ -32,7 +32,7 @@ if __name__ == "__main__":
     markdown = f"[[toc]]\n\n"
     idx = count(1)
     for cate in categories:
-        markdown += f"# {cate}\n\n"
+        markdown += f"## {cate}\n\n"
         markdown += "\n\n".join(
             [
                 template.format(
