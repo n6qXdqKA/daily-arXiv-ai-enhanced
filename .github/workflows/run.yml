@@ -5,7 +5,7 @@ name: arXiv-daily-ai-enhanced
 
 on:
   schedule:
-    - cron: "30 16 * * 1-5"
+    - cron: "50 16 * * 1-5"
   workflow_dispatch:
 
 
