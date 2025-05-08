@@ -6,7 +6,7 @@ class ArxivSpider(scrapy.Spider):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # categories = os.environ.get("CATEGORIES", "cs.CV")
-        categories = "cs.CV,cs.AI"
+        categories = "cs.CV"
         categories = categories.split(",")
         categories = list(map(str.strip, categories))
         self.start_urls = [
